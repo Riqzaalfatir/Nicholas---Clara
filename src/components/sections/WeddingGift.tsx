@@ -22,27 +22,27 @@ const WeddingGift = () => {
               alt="Wedding Gift"
               fill
               className="object-cover block"/>
-              <h2 className="absolute bottom-0 left-0 font-montreal font-regular text-[70px] text-[#F2F1E8] leading-none">Wedding Gift</h2>
+              <h2 className="absolute -bottom-[9px] left-0 font-montreal font-regular text-[70px] text-[#F2F1E8] leading-none ">Wedding Gift</h2>
         </div>
 
         {/* Konten */}
         <div className="w-[326px] mx-auto">
-            <hr className="border-t border-[#191A2A] mt-[36px]" />
+            <hr className="border-t border-[#191A2A] mt-[35px]" />
 
             <p className="font-montreal font-regular text-[12px] text-[#191A2A] mt-[22px]">Your presence and prayers are the greatest blessing to us.</p>
 
-            <p className="font-montreal font-regular text-[12px] text-[#191A2A] mt-[22px]">Should you wish to honor us with a gift, <br />
+            <p className="font-montreal font-regular text-[12px] text-[#191A2A] mt-[22px] leading-[17px]">Should you wish to honor us with a gift, <br />
             please find the details below for your convenience.</p>
 
-            <div className="flex items-center justify-between mt-[28px]">
-                <div>
+            <div className="flex items-end justify-between mt-[28px]">
+                <div className="leading-none">
                     <p className="font-montreal font-medium text-[12px] text-[#191A2A]">BCA</p>
-                    <p className="font-montreal font-medium text-[12px] text-[#191A2A]">123 555 2025 a/n Provite</p>
+                    <p className="font-montreal font-medium text-[12px] text-[#191A2A] mt-1.5">123 555 2025 a/n Provite</p>
                 </div>
-                <button onClick={handleCopy} className="font-montreal font-medium text-[12px] text-[#191A2A] underline">{copied ? "Copied!" : "Copy"}</button>
+                <button onClick={handleCopy} className="font-montreal font-medium text-[12px] text-[#191A2A] underline underline-offset-[5px]">{copied ? "Copied!" : "Copy"}</button>
             </div>
 
-            <hr className="border-t border-[#191A2A] mt-[12px]" />
+            <hr className="border-t border-[#191A2A] mt-[20px]" />
         </div>
     </section>
   );

@@ -19,14 +19,14 @@ const TanggalLokasi = () => {
           <p className="font-montreal font-medium text-[16px] text-[#191A2A] mt-[20px]">
             Abipraya Cahya Kawaluya Chapel
           </p>
-          <p className="font-montreal font-regular text-[12px] text-[#191A2A] text-center mt-[6px]">
-            Jl. Parahyangan Km 3, Kota Baru <br />
-            Parahyangan, Padalarang, Bandung Barat
+          <p className="font-montreal font-regular text-[12px] text-[#191A2A] leading-[17px] text-center mt-[10px]">
+            Jl. Parahyangan Km 3, Kota Baru Parahyangan,  <br />
+            Padalarang, Bandung Barat
           </p>
 
           <a
             href="#"
-            className="font-montreal font-medium text-[12px] text-[#191A2A] underline mt-[22px]"
+            className="font-montreal font-medium text-[12px] text-[#191A2A] underline underline-offset-[5px]  underline-offset-[5px]-offset-[5px] mt-[22px]"
           >
             Google Maps
           </a>
@@ -45,14 +45,14 @@ const TanggalLokasi = () => {
           <p className="font-montreal font-medium text-[16px] text-[#191A2A] mt-[20px]">
             Mason Pine Grand Ballroom
           </p>
-          <p className="font-montreal font-regular text-[12px] text-[#191A2A] text-center mt-[6px]">
+          <p className="font-montreal font-regular text-[12px] text-[#191A2A] leading-[17px] text-center mt-[10px]">
             Jl. Parahyangan Km 1, Kota Baru Parahyangan, <br />
             Padalarang, Bandung Barat
           </p>
 
           <a
             href="#"
-            className="font-montreal font-medium text-[12px] text-[#191A2A] underline mt-[22px]"
+            className="font-montreal font-medium text-[12px] text-[#191A2A] underline underline-offset-[5px] mt-[22px]"
           >
             Google Maps
           </a>
@@ -71,14 +71,14 @@ const TanggalLokasi = () => {
           <p className="font-montreal font-medium text-[16px] text-[#191A2A] mt-[20px]">
             Mason Pine Grand Ballroom
           </p>
-          <p className="font-montreal font-regular text-[12px] text-[#191A2A] text-center mt-[6px]">
+          <p className="font-montreal font-regular text-[12px] text-[#191A2A] leading-[17px] text-center mt-[10px]">
             Jl. Parahyangan Km 1, Kota Baru Parahyangan, <br />
             Padalarang, Bandung Barat
           </p>
 
           <a
             href="#"
-            className="font-montreal font-medium text-[12px] text-[#191A2A] underline mt-[22px]"
+            className="font-montreal font-medium text-[12px] text-[#191A2A] underline underline-offset-[5px] mt-[22px]"
           >
             Google Maps
           </a>
@@ -97,21 +97,20 @@ const TanggalLokasi = () => {
           <p className="font-montreal font-medium text-[16px] text-[#191A2A] mt-[20px]">
             Sona Table
           </p>
-          <p className="font-montreal font-regular text-[12px] text-[#191A2A] text-center mt-[6px]">
-           Hejo Square Kota Baru Parahyangan, <br />
-           Kertajaya, Bandung Barat
+          <p className="font-montreal font-regular text-[12px] text-[#191A2A] leading-[17px]   text-center mt-[10px]">
+            Hejo Square Kota Baru Parahyangan, <br />
+            Kertajaya, Bandung Barat
           </p>
 
           <a
             href="#"
-            className="font-montreal font-medium text-[12px] text-[#191A2A] underline mt-[22px]"
+            className="font-montreal font-medium text-[12px] text-[#191A2A] underline underline-offset-[5px] mt-[22px]"
           >
             Google Maps
           </a>
 
           <hr className="w-full border-t border-[#191A2A] mt-[40px]" />
         </div>
-
       </div>
     </section>
   );

@@ -13,9 +13,9 @@ const About = () => {
         {/* GRADIENT ATAS */}
         <div className="absolute top-0 left-0 w-full h-[209px] bg-gradient-to-b from-[#F2F1E8] to-transparent" />
         {/* GRADIENT BAWAH */}
-        <div className="absolute bottom-0 left-0 w-full h-[258px] bg-gradient-to-t from-[#F2F1E8] to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-[#F2F1E8] to-transparent" />
 
-        <div className="absolute top-[76px] left-1/2 -translate-x-1/2 w-[200px] h-[120px] z-10">
+        <div className="absolute top-[72px] left-1/2 -translate-x-1/2 w-[200px] h-[120px] z-10">
          <img
             src="/images/couple/Logo-nc.webp"
             alt="NC Logo"
@@ -25,7 +25,7 @@ const About = () => {
       </div>
 
       <div className="mt-[56px] mb-[108px] text-center">
-        <p className='text-[16px] font-helvetica font-medium w-[197px] text-justify leading-[px] text-[#191A2A]'>
+        <p className='text-[16px] font-helvetica font-medium w-[197px] text-justify leading-[18px] text-[#191A2A]'>
           Together With Our Families, We You Invite To Celebrate Our Marriage
         </p>
       </div>

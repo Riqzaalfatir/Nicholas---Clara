@@ -53,13 +53,13 @@ const Wishes = () => {
     <>
       <section
         id="wishes"
-        className="bg-[#F2F1E8] w-full flex flex-col items-center px-8 pt-[120px] pb-[120px]"
+        className="bg-[#F2F1E8] w-full flex flex-col items-center px-8 pt-[120px] pb-[120px] leading-none"
       >
         <h2 className="font-montreal font-medium text-[24px] text-[#191A2A]">
           Share Your Wishes
         </h2>
 
-        <div className="w-full max-w-[284px] mx-auto mt-[20px]">
+        <div className="w-full max-w-[284px] mx-auto mt-[60px]">
           <div className="flex flex-col gap-[20px]">
 
             <input
@@ -78,7 +78,7 @@ const Wishes = () => {
 
             <button
               onClick={handleSubmit}
-              className="bg-[#B7B7B7] hover:bg-[#191A2A] transition-colors duration-200 w-full rounded-full h-[33px] text-[12px] font-montreal font-regular uppercase flex items-center justify-center gap-1.5 text-white"
+              className="bg-[#B7B7B7] transition-colors duration-200 w-full rounded-full h-[33px] text-[12px] font-montreal font-regular uppercase flex items-center justify-center gap-1 text-[#191A2A] tracking-widest"
             >
               <Image
                 src="/images/wishes/Panah.svg"
@@ -159,14 +159,14 @@ const Wishes = () => {
 
             <button
               onClick={() => setShowAll(!showAll)}
-              className="bg-[#191A2A] hover:bg-[#191A2A]/80 transition-colors duration-200 w-full rounded-full h-[33px] text-[12px] font-montreal font-regular uppercase flex items-center justify-center gap-1.5 text-white"
+              className="bg-[#B7B7B7] transition-colors duration-200 w-full rounded-full h-[33px] text-[12px] font-montreal font-regular uppercase flex items-center justify-center gap-1.5 text-[#191A2A] tracking-widest"
             >
               <Image
-                src="/images/wishes/Pesan.svg"
+                src="/images/wishes/Pesan.png"
                 alt="Pesan"
                 width={15}
                 height={19}
-                className="object-cover invert"
+                className="object-cover"
               />
 
               {showAll ? "BACK" : "VIEW ALL MESSAGES"}

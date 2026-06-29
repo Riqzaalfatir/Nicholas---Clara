@@ -42,8 +42,9 @@ const Rsvp = () => {
             <p className="font-montreal font-regular text-[12px] text-[#191A2A] mt-[26px]">
               Sela
             </p>
-            <p className="font-montreal font-regular text-[12px] text-[#191A2A] text-center mt-[24px]">
-              Kindly confirm your attendance <br /> before 27 June 2026
+            <p className="font-montreal font-regular text-[12px] text-[#191A2A] text-center mt-[24px] tracking-widest leading-[20px]">
+              Kindly confirm your attendance before <br /> 
+              27 June 2026
             </p>
 
             <div className="flex items-center justify-center gap-[16px] mt-[34px]">
@@ -84,7 +85,7 @@ const Rsvp = () => {
                 : "CONFIRM"}
             </button>
 
-            <p className="font-montreal font-regular text-[10px] text-[#191A2A] mt-[54px] text-center">
+            <p className="font-montreal font-regular text-[10px] text-[#191A2A] mt-[54px] text-center tracking-wide leading-[17px]">
               If you need assistance with your RSVP, <br />
               please contact our support team.
             </p>
