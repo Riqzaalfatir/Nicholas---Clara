@@ -23,30 +23,30 @@ const WeddingGift = () => {
           fill
           className="object-cover block lg:object-bottom"
         />
-        <h2 className="absolute -bottom-[2.31vw] left-0 font-montreal font-regular text-[17.95vw] lg:text-[275px] text-[#F2F1E8] leading-none">
+        <h2 className="absolute -bottom-[2.31vw] left-0 font-montreal font-regular text-[17.95vw] lg:text-[18vw] whitespace-nowrap text-[#F2F1E8] leading-none">
           Wedding Gift
         </h2>
       </div>
 
       {/* Konten */}
       <div className="w-[83.59vw] lg:w-[564px] mx-auto">
-        <hr className="border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[9.74vw] lg:mt-[87px]" />
+        <hr className="border-t-[1.5px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[90px]" />
 
-        <p className="font-montreal font-regular text-[3.08vw] lg:text-[18px] text-[#191A2A] mt-[5.64vw] lg:mt-[38px]">
+        <p className="font-montreal font-regular text-[3.08vw] lg:text-[18px] text-[#191A2A] mt-[22px] lg:mt-[38px]">
           Your presence and prayers are the greatest blessing to us.
         </p>
 
-        <p className="font-montreal font-regular text-[3.08vw] lg:text-[18px] text-[#191A2A] mt-[5.64vw] lg:mt-[35px] leading-[4.36vw] lg:leading-[25px]">
+        <p className="font-montreal font-regular text-[3.08vw] lg:text-[18px] text-[#191A2A] mt-[22px] lg:mt-[35px] leading-[4.36vw] lg:leading-[25px]">
           Should you wish to honor us with a gift, <br />
           please find the details below for your convenience.
         </p>
 
-        <div className="flex items-end justify-between mt-[7.18vw] lg:mt-[52px]">
+        <div className="flex items-end justify-between mt-[28px] lg:mt-[52px]">
           <div className="leading-none">
             <p className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A]">
               BCA
             </p>
-            <p className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] mt-[1.54vw] lg:mt-[10px]">
+            <p className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] mt-[3px] lg:mt-[10px]">
               123 555 2025 a/n Provite
             </p>
           </div>
@@ -58,7 +58,7 @@ const WeddingGift = () => {
           </button>
         </div>
 
-        <hr className="border-t-[1px] lg:border-t-[1.5px] border-[#191A2A] mt-[5.13vw] lg:mt-[25px]" />
+        <hr className="border-t-[1.5px] lg:border-t-[2px] border-[#191A2A] mt-[22px] lg:mt-[35px]" />
       </div>
 
     </section>

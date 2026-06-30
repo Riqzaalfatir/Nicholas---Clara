@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 
 type PesanItem = {
   id: number;
@@ -18,28 +17,30 @@ const WishesCard = ({ data, onClose }: WishesCardProps) => {
   return (
     <div
       onClick={onClose}
-      className="fixed flex-col inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm z-50 px-4"
+      className="fixed inset-0 flex flex-col items-center justify-center bg-black/50 backdrop-blur-sm z-50 px-6"
     >
-      <motion.div
-        initial={{ opacity: 0, scale: 0.85, y: 40 }}
-        animate={{ opacity: 1, scale: 1, y: 0 }}
-        exit={{ opacity: 0, scale: 0.85 }}
-        transition={{ duration: 0.4, ease: "easeOut" }}
+      <div
         onClick={(e) => e.stopPropagation()}
-        className="bg-[#7A4D2F]/60 rounded-2xl p-6 w-[320px] md:w-[350px] h-[280px] md:h-[350px] text-center shadow-2xl border border-[#FEF8EF]/20 mb-5"
+        className="bg-[#F2F1E8] rounded-2xl p-8 w-full max-w-[330px] text-center shadow-xl border border-[#191A2A]/10"
       >
-        <h3 className="text-[25px] md:text-[28px] text-[#FEF8EF] font-semibold tracking-wide leading-snug font-cylburn">
+        <p className="font-montreal text-[40px] text-[#191A2A]/15 leading-none italic select-none -mb-2">
+          "
+        </p>
+
+        <h3 className="text-[18px] text-[#191A2A] font-montreal font-bold tracking-wide">
           {data.nama}
         </h3>
-        <div className="w-18 h-[1px] bg-[#FEF8EF] mx-auto my-4 opacity-40 mb-5" />
-        <p className="text-[13px] md:text-[15px] font-creators leading-relaxed mb-6 text-[#FEF8EF]/90 line-clamp-6">
+
+        <div className="w-[40px] h-[1px] bg-[#191A2A]/30 mx-auto my-4" />
+
+        <p className="text-[13px] font-montreal font-regular leading-relaxed text-[#191A2A]/85 line-clamp-6">
           {data.pesan}
         </p>
-      </motion.div>
+      </div>
 
       <button
         onClick={onClose}
-        className="w-[320px] md:w-[350px] bg-[#FEF8EF] hover:bg-[#e8ddd0] active:bg-[#d4c4b0] active:scale-95 transition-all duration-200 text-[#713324] px-6 py-2 rounded-xl text-[12px] font-creators tracking-widest uppercase"
+        className="mt-5 w-full max-w-[330px] bg-[#191A2A] hover:bg-[#191A2A]/80 active:scale-95 transition-all duration-200 text-white px-6 py-3 rounded-full text-[12px] font-montreal font-medium tracking-widest uppercase"
       >
         BACK
       </button>

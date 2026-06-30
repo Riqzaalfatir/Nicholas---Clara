@@ -3,10 +3,10 @@ import React from 'react'
 const FotoTeks = () => {
   return (
     <section className='bg-[#F2F1E8]'>
-      <div className="py-[30.77vw] lg:py-[240px] flex flex-col items-center justify-center gap-[5.13vw]">
+      <div className="py-[120px] lg:py-[240px] flex flex-col items-center justify-center gap-[5.13vw] lg:gap-[60px]">
 
         {/* YOUR */}
-        <div className="flex items-center gap-[5.13vw] lg:gap-[49px] ml-[7.18vw]">
+        <div className="flex items-center gap-[5.13vw] lg:gap-[48px] ml-[7.18vw] lg:ml-[4vw]">
           <p className='font-montreal font-medium text-[3.59vw] lg:text-[36px] text-[#191A2A] pt-[5.64vw] lg:pt-[45px]'>
             YOUR
           </p>
@@ -19,7 +19,7 @@ const FotoTeks = () => {
         </div>
 
         {/* IS OUR */}
-        <div className="flex items-center gap-[4.62vw] lg:gap-[44px] -ml-[4.62vw]">
+        <div className="flex items-center gap-[4.62vw] lg:gap-[44px] -ml-[4.62vw] lg:-ml-[3.5vw]">
           <p className='font-montreal font-medium text-[3.59vw] lg:text-[36px] text-[#191A2A]'>
             IS OUR
           </p>

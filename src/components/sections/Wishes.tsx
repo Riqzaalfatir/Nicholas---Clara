@@ -19,7 +19,9 @@ const Wishes = () => {
   const [pesan, setPesan] = useState<string>("");
   const [showPopup, setShowPopup] = useState<boolean>(false);
   const [showAll, setShowAll] = useState<boolean>(false);
-  const [selectedMessage, setSelectedMessage] = useState<PesanItem | null>(null);
+  const [selectedMessage, setSelectedMessage] = useState<PesanItem | null>(
+    null,
+  );
   const [pesanList, setPesanList] = useState<PesanItem[]>(() => {
     if (typeof window === "undefined") return dummyPesan;
     const saved = localStorage.getItem("pesan");
@@ -53,15 +55,14 @@ const Wishes = () => {
     <>
       <section
         id="wishes"
-        className="bg-[#F2F1E8] w-full flex flex-col items-center px-[8.21vw] pt-[30.77vw] pb-[30.77vw] lg:pt-[236px] lg:pb-[35px] leading-none"
+        className="bg-[#F2F1E8] w-full flex flex-col items-center px-[0.5vw] pt-[120px] pb-[120px] lg:pt-[236px] lg:pb-[35px] leading-none"
       >
         <h2 className="font-montreal font-medium text-[6.15vw] lg:text-[64px] text-[#191A2A]">
           Share Your Wishes
         </h2>
 
-        <div className="w-full max-w-[72.82vw] lg:max-w-[583px] mx-auto mt-[15.38vw] lg:mt-[65px]">
+        <div className="w-full max-w-[72.82vw] lg:max-w-[583px] mx-auto mt-[50px] lg:mt-[65px]">
           <div className="flex flex-col gap-[20px]">
-
             <input
               type="text"
               value={nama}
@@ -78,28 +79,26 @@ const Wishes = () => {
 
             <button
               onClick={handleSubmit}
-              className="bg-[#B7B7B7] transition-colors duration-200 w-full rounded-full h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[18px] font-montreal font-regular uppercase flex items-center justify-center gap-1 text-[#191A2A] tracking-widest"
+              className="group bg-[#B7B7B7] hover:bg-[#191A2A] active:scale-95 transition-all duration-200 w-full rounded-full h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[18px] font-montreal font-regular uppercase flex items-center justify-center gap-0.5 lg:gap-1 text-[#191A2A] hover:text-white tracking-widest"
             >
               <Image
                 src="/images/wishes/Panah.svg"
                 alt="Kirim"
                 width={20}
                 height={20}
-                className="object-contain w-[20px] lg:w-[25px] "
+                className="object-contain w-[18px] lg:w-[25px] group-hover:invert transition-all duration-200"
               />
               Send
             </button>
 
             <div
               className={`w-full rounded-2xl h-[84.36vw] lg:h-[519px] overflow-y-auto scrollbar-hide ${
-                showAll
-                  ? "bg-transparent rounded-none"
-                  : "bg-[#B7B7B7]"
+                showAll ? "bg-transparent rounded-none" : "bg-[#B7B7B7]"
               }`}
             >
               {!showAll ? (
                 <div>
-                  <div className="sticky top-0 w-full h-[8px] lg:h-[15px] bg-[#B7B7B7] z-10" />
+                  <div className="sticky top-0 w-full h-[12px] lg:h-[15px] bg-[#B7B7B7] z-10" />
 
                   <div className="px-[3.33vw] py-[0.51vw] lg:px-[23px] lg:py-[5px]">
                     {pesanList.slice(0, 8).map((item, index, array) => (
@@ -108,7 +107,7 @@ const Wishes = () => {
                           {item.nama}
                         </p>
 
-                        <p className="text-[#191A2A] font-montreal font-regular text-[2.56vw] lg:text-[18px] tracking-[0.13vw] tracking-wide mb-[2.56vw] lg:mb-[17px]">
+                        <p className="text-[#191A2A] font-montreal font-regular text-[2.56vw] lg:text-[18px] tracking-[0.13vw] tracking-wide mb-[2.56vw] lg:mb-[17px] break-words">
                           {item.pesan}
                         </p>
 
@@ -119,7 +118,7 @@ const Wishes = () => {
                     ))}
                   </div>
 
-                  <div className="sticky bottom-0 w-full h-[2px] lg:h-[5px] bg-[#B7B7B7] z-10" />
+                  <div className="sticky bottom-0 w-full h-[12px] lg:h-[5px] bg-[#B7B7B7] z-10" />
                 </div>
               ) : (
                 <div className="w-full">
@@ -159,16 +158,15 @@ const Wishes = () => {
 
             <button
               onClick={() => setShowAll(!showAll)}
-              className="bg-[#B7B7B7] transition-colors duration-200 w-full rounded-full h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[18px] font-montreal font-regular uppercase flex items-center justify-center gap-1.5 text-[#191A2A] tracking-widest"
+              className="group bg-[#B7B7B7] hover:bg-[#191A2A] active:scale-95 transition-all duration-200 w-full rounded-full h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[18px] font-montreal font-regular uppercase flex items-center justify-center gap-1.5 text-[#191A2A] hover:text-white tracking-widest"
             >
               <Image
                 src="/images/wishes/Pesan.png"
                 alt="Pesan"
                 width={20}
                 height={20}
-                className="object-cover w-[20px] lg:w-[25px]"
+                className="object-cover w-[20px] lg:w-[25px] group-hover:invert transition-all duration-200"
               />
-
               {showAll ? "BACK" : "VIEW ALL MESSAGES"}
             </button>
           </div>
@@ -228,7 +226,6 @@ const Wishes = () => {
 };
 
 export default Wishes;
-
 
 // SEBELUM DI VW KAN
 // "use client";
