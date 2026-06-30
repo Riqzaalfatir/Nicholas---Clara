@@ -25,7 +25,10 @@ const WeddingGift = () => {
           className="object-cover block lg:object-bottom"
         />
         <motion.h2
-         
+          variants={fadeUp}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0 }}
           className="absolute -bottom-[2.31vw] left-0 font-montreal font-regular text-[17.95vw] lg:text-[18vw] whitespace-nowrap text-[#F2F1E8] leading-none"
         >
           Wedding Gift
