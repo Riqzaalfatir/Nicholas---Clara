@@ -159,42 +159,42 @@ const Wishes = () => {
                   <div className="sticky bottom-0 w-full h-[12px] lg:h-[5px] bg-[#B7B7B7] z-10" />
                 </div>
               ) : (
-                <div className="w-full">
-                  <div className="grid grid-cols-2 gap-[2.05vw] items-stretch">
-                    {pesanList.map((item, index) => (
-  <motion.div
-    key={item.id}
-    variants={fadeIn}
-    initial="hidden"
-    animate="show"
-    transition={{
-      duration: 1.5,
-      ease: "easeOut",
-      delay: index * 0.1,
-    }}
-    onClick={() => setSelectedMessage(item)}
-    className="rounded-xl overflow-hidden border border-[#191A2A]/20 bg-[#E0DFDA] flex flex-col cursor-pointer active:scale-95 transition-transform duration-150"
-  >
-    <div className="p-[2.56vw] relative flex-1 flex flex-col justify-center">
-      <p className="absolute top-[1.54vw] left-[2.05vw] text-[6.15vw] lg:text-[22px] font-montreal text-[#191A2A]/30">
-        "
-      </p>
+  <div className="w-full">
+    <div className="grid grid-cols-2 lg:grid-cols-2 gap-[2.05vw] lg:gap-[20px] items-stretch">
+      {pesanList.map((item, index) => (
+        <motion.div
+          key={item.id}
+          variants={fadeIn}
+          initial="hidden"
+          animate="show"
+          transition={{
+            duration: 1.5,
+            ease: "easeOut",
+            delay: index * 0.1,
+          }}
+          onClick={() => setSelectedMessage(item)}
+          className="rounded-xl overflow-hidden border border-[#191A2A]/20 bg-[#E0DFDA] flex flex-col cursor-pointer active:scale-95 transition-transform duration-150"
+        >
+          <div className="p-[2.56vw] lg:p-[20px] relative flex-1 flex flex-col justify-center">
+            <p className="absolute top-[1.54vw] left-[2.05vw] lg:top-[12px] lg:left-[16px] text-[6.15vw] lg:text-[38px] font-montreal text-[#191A2A]/30">
+              "
+            </p>
 
-      <p className="font-montreal font-regular text-[2.56vw] text-[#191A2A] lg:text-[18px] text-left mt-5 mb-2 line-clamp-4 leading-[3.85vw]">
-        {item.pesan}
-      </p>
-    </div>
+            <p className="font-montreal font-regular text-[2.56vw] lg:text-[16px] text-[#191A2A] text-left mt-5 mb-2 line-clamp-4 leading-[3.85vw] lg:leading-[24px]">
+              {item.pesan}
+            </p>
+          </div>
 
-    <div className="bg-[#191A2A] h-[7.69vw] flex items-center justify-center px-4">
-      <p className="text-white text-center line-clamp-1 text-[2.56vw] lg:text-[18px] font-montreal">
-        {item.nama}
-      </p>
+          <div className="bg-[#191A2A] h-[7.69vw] lg:h-[48px] flex items-center justify-center px-4">
+            <p className="text-white text-center line-clamp-1 text-[2.56vw] lg:text-[16px] font-montreal">
+              {item.nama}
+            </p>
+          </div>
+        </motion.div>
+      ))}
     </div>
-  </motion.div>
-))}
-                  </div>
-                </div>
-              )}
+  </div>
+)}
             </motion.div>
 
             <WishesCard

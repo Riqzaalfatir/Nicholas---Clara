@@ -18,7 +18,12 @@ const IMAGES_TO_PRELOAD = [
 
   "/images/popup/TandaCeklisBg.svg",
   "/images/popup/TandaSeru.svg",
-  "/images/popup/TandaTanya.svg"
+  "/images/popup/TandaTanya.svg",
+
+  "/images/fototeks/Couple1.webp",
+  "/images/fototeks/Couple2.webp",
+
+  "/images/thankyou/Aset-Thankyou.webp"
 ];
 
 export function usePreloader() {
