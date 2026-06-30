@@ -16,49 +16,49 @@ const WeddingGift = () => {
     <section className="bg-[#F2F1E8]">
 
       {/* Gambar dan judul */}
-      <div className="relative w-full aspect-[390/255] overflow-hidden">
+      <div className="relative w-full aspect-[390/255] lg:aspect-[1514/759] overflow-hidden">
         <Image
-          src="/images/weddinggift/Couple-Gift.webp"
+          src="/images/weddinggift/Couple-Gift.svg"
           alt="Wedding Gift"
           fill
-          className="object-cover block"
+          className="object-cover block lg:object-bottom"
         />
-        <h2 className="absolute -bottom-[2.31vw] left-0 font-montreal font-regular text-[17.95vw] text-[#F2F1E8] leading-none">
+        <h2 className="absolute -bottom-[2.31vw] left-0 font-montreal font-regular text-[17.95vw] lg:text-[275px] text-[#F2F1E8] leading-none">
           Wedding Gift
         </h2>
       </div>
 
       {/* Konten */}
-      <div className="w-[83.59vw] mx-auto">
-        <hr className="border-t-[1px] border-[#191A2A] mt-[9.74vw]" />
+      <div className="w-[83.59vw] lg:w-[564px] mx-auto">
+        <hr className="border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[9.74vw] lg:mt-[87px]" />
 
-        <p className="font-montreal font-regular text-[3.08vw] text-[#191A2A] mt-[5.64vw]">
+        <p className="font-montreal font-regular text-[3.08vw] lg:text-[18px] text-[#191A2A] mt-[5.64vw] lg:mt-[38px]">
           Your presence and prayers are the greatest blessing to us.
         </p>
 
-        <p className="font-montreal font-regular text-[3.08vw] text-[#191A2A] mt-[5.64vw] leading-[4.36vw]">
+        <p className="font-montreal font-regular text-[3.08vw] lg:text-[18px] text-[#191A2A] mt-[5.64vw] lg:mt-[35px] leading-[4.36vw] lg:leading-[25px]">
           Should you wish to honor us with a gift, <br />
           please find the details below for your convenience.
         </p>
 
-        <div className="flex items-end justify-between mt-[7.18vw]">
+        <div className="flex items-end justify-between mt-[7.18vw] lg:mt-[52px]">
           <div className="leading-none">
-            <p className="font-montreal font-medium text-[3.08vw] text-[#191A2A]">
+            <p className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A]">
               BCA
             </p>
-            <p className="font-montreal font-medium text-[3.08vw] text-[#191A2A] mt-[1.54vw]">
+            <p className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] mt-[1.54vw] lg:mt-[10px]">
               123 555 2025 a/n Provite
             </p>
           </div>
           <button
             onClick={handleCopy}
-            className="font-montreal font-medium text-[3.08vw] text-[#191A2A] underline underline-offset-[5px]"
+            className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] underline underline-offset-[5px]"
           >
             {copied ? "Copied!" : "Copy"}
           </button>
         </div>
 
-        <hr className="border-t-[1px] border-[#191A2A] mt-[5.13vw]" />
+        <hr className="border-t-[1px] lg:border-t-[1.5px] border-[#191A2A] mt-[5.13vw] lg:mt-[25px]" />
       </div>
 
     </section>
@@ -89,33 +89,33 @@ export default WeddingGift;
 //     <section className="bg-[#F2F1E8]">
 
 //         {/* Gambar dan judul */}
-//         <div className="relative w-full h-[255px] overflow-hidden">
+//         <div className="relative w-full h-[255px] lg:aspect-[1514/759] overflow-hidden">
 //             <Image 
 //               src="/images/weddinggift/Couple-Gift.webp"
 //               alt="Wedding Gift"
 //               fill
-//               className="object-cover block"/>
-//               <h2 className="absolute -bottom-[9px] left-0 font-montreal font-regular text-[70px] text-[#F2F1E8] leading-none ">Wedding Gift</h2>
+//               className="object-cover block lg:object-bottom"/>
+//               <h2 className="absolute -bottom-[9px] left-0 font-montreal font-regular text-[70px] lg:text-[275px] text-[#F2F1E8] leading-none ">Wedding Gift</h2>
 //         </div>
 
 //         {/* Konten */}
-//         <div className="w-[326px] mx-auto">
-//             <hr className="border-t border-[#191A2A] mt-[38px]" />
+//         <div className="w-[326px] lg:w-[564px] mx-auto">
+//             <hr className="border-t border-[#191A2A] mt-[38px] lg:mt-[87px]" />
 
-//             <p className="font-montreal font-regular text-[12px] text-[#191A2A] mt-[22px]">Your presence and prayers are the greatest blessing to us.</p>
+//             <p className="font-montreal font-regular text-[12px] lg:text-[18px] text-[#191A2A] mt-[22px] lg:mt-[38px]">Your presence and prayers are the greatest blessing to us.</p>
 
-//             <p className="font-montreal font-regular text-[12px] text-[#191A2A] mt-[22px] leading-[17px]">Should you wish to honor us with a gift, <br />
+//             <p className="font-montreal font-regular text-[12px] lg:text-[18px] text-[#191A2A] mt-[22px] lg:mt-[35px] leading-[17px] lg:leading-[25px]">Should you wish to honor us with a gift, <br />
 //             please find the details below for your convenience.</p>
 
-//             <div className="flex items-end justify-between mt-[28px]">
+//             <div className="flex items-end justify-between mt-[28px] lg:mt-[52px]">
 //                 <div className="leading-none">
-//                     <p className="font-montreal font-medium text-[12px] text-[#191A2A]">BCA</p>
-//                     <p className="font-montreal font-medium text-[12px] text-[#191A2A] mt-1.5">123 555 2025 a/n Provite</p>
+//                     <p className="font-montreal font-medium text-[12px] lg:text-[18px] text-[#191A2A]">BCA</p>
+//                     <p className="font-montreal font-medium text-[12px] lg:text-[18px] text-[#191A2A] mt-1.5 lg:mt-[10px]">123 555 2025 a/n Provite</p>
 //                 </div>
-//                 <button onClick={handleCopy} className="font-montreal font-medium text-[12px] text-[#191A2A] underline underline-offset-[5px]">{copied ? "Copied!" : "Copy"}</button>
+//                 <button onClick={handleCopy} className="font-montreal font-medium text-[12px] lg:text-[18px] text-[#191A2A] underline underline-offset-[5px]">{copied ? "Copied!" : "Copy"}</button>
 //             </div>
 
-//             <hr className="border-t border-[#191A2A] mt-[20px]" />
+//             <hr className="border-t border-[#191A2A] mt-[20px] lg:mt-[25px]" />
 //         </div>
 //     </section>
 //   );

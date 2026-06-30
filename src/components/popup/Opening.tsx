@@ -91,7 +91,7 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
 
             <div className="relative w-full h-[180px] md:h-[220px] overflow-hidden z-10 hidden lg:block">
               <Image
-                src="/images/ppening/Opening-Dekstop.webp"
+                src="/images/opening/Opening-Dekstop.webp"
                 alt="prewed"
                 fill
                 className="object-cover object-[50%_50%] md:object-[50%_70%]"
