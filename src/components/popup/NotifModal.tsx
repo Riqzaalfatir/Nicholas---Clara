@@ -251,7 +251,7 @@ const NotifModal = ({
           }
         }
         .animate-modalIn {
-          animation: modalIn 0.22s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+          animation: modalIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
         }
       `}</style>
     </div>

@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 type PesanItem = {
   id: number;
   nama: string;
@@ -22,13 +24,21 @@ const WishesCard = ({ data, onClose }: WishesCardProps) => {
     .slice(0, 2);
 
   return (
-    <div
+    <motion.div
       onClick={onClose}
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-[4px] px-6"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.6 }}
     >
-      <div
+      <motion.div
         onClick={(e) => e.stopPropagation()}
         className="relative overflow-hidden rounded-[24px] border border-[#191A2A]/15 bg-[#F2F1E8] shadow-lg w-full max-w-[360px]"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.4 }}
       >
         {/* Decorative top bar */}
         <div className="h-1.5 bg-gradient-to-r from-[#191A2A] via-[#191A2A] to-[#191A2A]/80" />
@@ -68,14 +78,14 @@ const WishesCard = ({ data, onClose }: WishesCardProps) => {
             onClick={onClose}
             className="w-full bg-[#191A2A] hover:bg-[#191A2A]/85 active:scale-95 transition-all duration-300 text-white px-6 py-3.5 rounded-full text-[12px] font-montreal font-bold tracking-[0.5px] uppercase shadow-sm hover:shadow-md"
           >
-            ✓ Close
+            Close
           </button>
         </div>
 
         {/* Decorative bottom bar */}
         <div className="h-1 bg-gradient-to-r from-[#191A2A]/80 via-[#191A2A] to-[#191A2A]" />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

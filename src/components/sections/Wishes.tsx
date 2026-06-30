@@ -6,7 +6,7 @@ import Image from "next/image";
 import WishesCard from "@/components/popup/WishesCard";
 import NotifModal from "@/components/popup/NotifModal";
 import { motion } from "framer-motion";
-import { fadeUp, fadeIn} from "@/lib/animation";
+import { fadeUp, fadeIn } from "@/lib/animation";
 
 type PesanItem = {
   id: number;
@@ -141,11 +141,11 @@ const Wishes = () => {
                   <div className="px-[3.33vw] py-[0.51vw] lg:px-[23px] lg:py-[5px]">
                     {pesanList.slice(0, 8).map((item, index, array) => (
                       <div key={item.id}>
-                        <p className="text-[#191A2A] font-montreal font-bold text-[3.08vw] mb-[1.03vw] lg:text-[18px] lg:mb-[17px]">
+                        <p className="text-[#191A2A] font-montreal text-[3.08vw] mb-[10px] lg:text-[18px] lg:mb-[17px]">
                           {item.nama}
                         </p>
 
-                        <p className="text-[#191A2A] font-montreal font-regular text-[2.56vw] lg:text-[18px] tracking-[0.13vw] tracking-wide mb-[2.56vw] lg:mb-[17px] break-words">
+                        <p className="text-[#191A2A] font-montreal font-regular text-[2.56vw] lg:text-[18px] tracking-wide mb-[13px] lg:mb-[17px] break-words">
                           {item.pesan}
                         </p>
 
@@ -158,71 +158,71 @@ const Wishes = () => {
 
                   <div className="sticky bottom-0 w-full h-[12px] lg:h-[5px] bg-[#B7B7B7] z-10" />
                 </div>
-         ) : (
-  <div className="w-full px-[5px] lg:px-[10px] py-[2.56vw] lg:py-[20px]">
-    <div className="grid grid-cols-2 lg:grid-cols-2 gap-[2.56vw] lg:gap-[24px]">
-      {pesanList.map((item, index) => {
-        const initials = item.nama
-          .split(" ")
-          .map((n) => n[0])
-          .join("")
-          .toUpperCase()
-          .slice(0, 2);
+              ) : (
+                <div className="w-full px-[5px] lg:px-[10px] py-[2.56vw] lg:py-[20px]">
+                  <div className="grid grid-cols-2 lg:grid-cols-2 gap-[2.56vw] lg:gap-[18px]">
+                    {pesanList.map((item, index) => {
+                      const initials = item.nama
+                        .split(" ")
+                        .map((n) => n[0])
+                        .join("")
+                        .toUpperCase()
+                        .slice(0, 2);
 
-        return (
-          <motion.div
-            key={item.id}
-            variants={fadeIn}
-            initial="hidden"
-            animate="show"
-            transition={{
-              duration: 1.5,
-              ease: "easeOut",
-              delay: index * 0.08,
-            }}
-            onClick={() => setSelectedMessage(item)}
-            className="group relative overflow-hidden rounded-[15px] border border-[#191A2A]/15 bg-[#E0DFDA] flex flex-col cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-[#191A2A]/30 active:scale-95"
-          >
-            {/* Decorative top accent */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#191A2A]/60 via-[#191A2A]/30 to-transparent" />
+                      return (
+                        <motion.div
+                          key={item.id}
+                          variants={fadeIn}
+                          initial="hidden"
+                          animate="show"
+                          transition={{
+                            duration: 1.5,
+                            ease: "easeOut",
+                            delay: index * 0.08,
+                          }}
+                          onClick={() => setSelectedMessage(item)}
+                          className="group relative overflow-hidden rounded-[15px] border border-[#191A2A]/15 bg-[#E0DFDA] flex flex-col cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-[#191A2A]/30 active:scale-95"
+                        >
+                          {/* Decorative top accent */}
+                          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#191A2A]/60 via-[#191A2A]/30 to-transparent" />
 
-            {/* Content area */}
-            <div className="p-[2.56vw] lg:p-[20px] flex-1 flex flex-col justify-between">
-              {/* Quotation mark */}
-              <p className="text-[5.13vw] lg:text-[32px] font-montreal text-[#191A2A]/15 leading-none mb-2 group-hover:text-[#191A2A]/25 transition-colors">
-                "
-              </p>
+                          {/* Content area */}
+                          <div className="p-[2.56vw] lg:p-[20px] flex-1 flex flex-col justify-between">
+                            {/* Quotation mark */}
+                            <p className="text-[5.13vw] lg:text-[32px] font-montreal text-[#191A2A]/15 leading-none mb-2 group-hover:text-[#191A2A]/25 transition-colors">
+                              "
+                            </p>
 
-              {/* Message */}
-              <p className="font-montreal font-regular text-[2.56vw] lg:text-[15px] text-[#191A2A]/85 text-left line-clamp-4 leading-[3.85vw] lg:leading-[22px] mb-4">
-                {item.pesan}
-              </p>
+                            {/* Message */}
+                            <p className="font-montreal font-regular text-[2.56vw] lg:text-[15px] text-[#191A2A]/85 text-left line-clamp-4 leading-[3.85vw] lg:leading-[22px] mb-4">
+                              {item.pesan}
+                            </p>
 
-              {/* Accent line */}
-              <div className="w-8 h-0.5 bg-[#191A2A]/20 rounded-full" />
-            </div>
+                            {/* Accent line */}
+                            <div className="w-8 h-0.5 bg-[#191A2A]/20 rounded-full" />
+                          </div>
 
-            {/* Avatar + Name footer */}
-            <div className="bg-[#191A2A] px-[2.56vw] lg:px-[16px] py-[2.05vw] lg:py-[14px] flex items-center gap-[1.54vw] lg:gap-[12px]">
-              <div className="w-[5.13vw] lg:w-[36px] h-[5.13vw] lg:h-[36px] rounded-full bg-white/15 flex items-center justify-center flex-shrink-0 border border-white/20">
-                <p className="text-white text-[2.56vw] lg:text-[13px] font-montreal font-bold">
-                  {initials}
-                </p>
-              </div>
+                          {/* Avatar + Name footer */}
+                          <div className="bg-[#191A2A] px-[2.56vw] lg:px-[16px] py-[2.05vw] lg:py-[14px] flex items-center gap-[1.54vw] lg:gap-[12px]">
+                            <div className="w-[5.13vw] lg:w-[36px] h-[5.13vw] lg:h-[36px] rounded-full bg-white/15 flex items-center justify-center flex-shrink-0 border border-white/20">
+                              <p className="text-white text-[2.56vw] lg:text-[13px] font-montreal font-bold">
+                                {initials}
+                              </p>
+                            </div>
 
-              <p className="text-white text-[2.05vw] lg:text-[14px] font-montreal font-medium truncate flex-1">
-                {item.nama}
-              </p>
-            </div>
+                            <p className="text-white text-[2.05vw] lg:text-[14px] font-montreal font-medium truncate flex-1 tracking-wide">
+                              {item.nama}
+                            </p>
+                          </div>
 
-            {/* Hover effect overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/0 to-transparent opacity-0 group-hover:opacity-10 transition-opacity pointer-events-none" />
-          </motion.div>
-        );
-      })}
-    </div>
-  </div>
-)}
+                          {/* Hover effect overlay */}
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/0 to-transparent opacity-0 group-hover:opacity-10 transition-opacity pointer-events-none" />
+                        </motion.div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
             </motion.div>
 
             <WishesCard
@@ -253,10 +253,21 @@ const Wishes = () => {
             </motion.div>
           </div>
         </div>
-
-        {showPopup && (
-          <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black/40 backdrop-blur-[4px] px-[6.15vw]">
-            <div className="relative overflow-hidden rounded-[28px] border border-[#191A2A]/20 bg-[#F2F1E8] shadow-lg w-full max-w-[84.62vw]">
+ {showPopup && (
+          <motion.div 
+            className="fixed inset-0 z-[999] flex items-center justify-center bg-black/40 backdrop-blur-[4px] px-[6.15vw]"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <motion.div 
+              className="relative overflow-hidden rounded-[28px] border border-[#191A2A]/20 bg-[#F2F1E8] shadow-lg w-full max-w-[84.62vw]"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.4 }}
+            >
               <div className="absolute top-0 left-0 w-full h-[1.54vw] bg-[#191A2A]" />
 
               <div className="px-[7.18vw] pt-[9.23vw] pb-[7.18vw] flex flex-col items-center text-center">
@@ -290,8 +301,8 @@ const Wishes = () => {
               </div>
 
               <div className="absolute bottom-0 left-0 w-full h-[5px] bg-[#191A2A]" />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         )}
       </section>
 

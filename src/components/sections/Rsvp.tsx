@@ -145,7 +145,7 @@ const Rsvp = () => {
 >
   <button
     onClick={handleConfirm}
-    className={`w-[56.92vw] h-[8.46vw] lg:w-[368px] lg:h-[40px] transition-colors duration-200 rounded-[71px] lg:rounded-[38px] font-montreal font-regular text-[3.08vw] lg:text-[18px] text-white flex items-center justify-center mt-[28px] lg:mt-[42px]
+    className={`w-[56.92vw] h-[8.46vw] lg:w-[368px] lg:h-[40px] transition-colors duration-400 rounded-[71px] lg:rounded-[38px] font-montreal font-regular text-[3.08vw] lg:text-[18px] text-white flex items-center justify-center mt-[28px] lg:mt-[42px]
     ${
       pilihan
         ? "bg-[#191A2A] hover:bg-[#191A2A]/90"
