@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { usePreloader } from "@/hooks/usePreloader";
+import { usePreloader } from "../hooks/usePreloader";
 import LoadingScreen from "@/ui/LoadingScreen";
 import Opening from "@/components/popup/Opening";
 
