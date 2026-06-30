@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        sans: ["var(--font-noto-sans)"],
         helvetica: ["var(--font-helvetica)"],
         montreal: ["var(--font-neue-montreal)"],
       },

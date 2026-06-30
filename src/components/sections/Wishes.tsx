@@ -113,7 +113,7 @@ const Wishes = () => {
                         </p>
 
                         {index !== array.length - 1 && (
-                          <div className="border-t border-[#191A2A]/20 mt-[8px] mb-[15px]" />
+                          <div className="border-t border-[#191A2A] mt-[8px] mb-[15px]" />
                         )}
                       </div>
                     ))}

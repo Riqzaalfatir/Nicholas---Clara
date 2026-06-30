@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Noto_Sans  } from "next/font/google";
 import { helvetica, neueMontreal } from "../fonts";
 import "./globals.css";
 
@@ -10,6 +10,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const notoSans = Noto_Sans({
+  variable: "--font-noto-sans",
   subsets: ["latin"],
 });
 
@@ -26,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${helvetica.variable} ${neueMontreal.variable}`}
+      className={`${notoSans.variable} ${geistSans.variable} ${geistMono.variable} ${helvetica.variable} ${neueMontreal.variable}`}
     >
       <body>{children}</body>
     </html>
