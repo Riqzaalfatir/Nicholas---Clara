@@ -1,15 +1,31 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeUp, fadeRight, fadeLeft } from "@/lib/animation";
 
 const EventOrder = () => {
   return (
     <section id="eventorder" className="bg-[#F2F1E8]">
       <div className="pt-[110px] lg:pt-[232px] flex flex-col items-center justify-center leading-none">
-        <h2 className="text-[6.15vw] lg:text-[64px] font-montreal font-medium text-[#191A2A]">
+        <motion.h2
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+          className="text-[6.15vw] lg:text-[64px] font-montreal font-medium text-[#191A2A]"
+        >
           Saturday, 29 August 2026
-        </h2>
+        </motion.h2>
 
         {/* Holy Matrimony */}
-        <div className="flex flex-col items-center justify-center leading-none mt-[60px] lg:mt-[85px] w-[83.59vw] lg:w-[1152px]">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+          className="flex flex-col items-center justify-center leading-none mt-[60px] lg:mt-[85px] w-[83.59vw] lg:w-[1152px]"
+        >
           <p className="font-montreal font-medium text-[4.10vw] lg:text-[36px] text-[#191A2A]">
             Holy Matrimony
           </p>
@@ -32,11 +48,25 @@ const EventOrder = () => {
           >
             Google Maps
           </a>
-          <hr className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[70px]" />
-        </div>
+          <motion.hr
+            variants={fadeRight}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 2.5, ease: "easeOut" }}
+            className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[70px]"
+          />
+        </motion.div>
 
         {/* Tea Ceremony */}
-        <div className="flex flex-col items-center justify-center leading-none mt-[40px] lg:mt-[60px] w-[83.59vw] lg:w-[1152px]">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+          className="flex flex-col items-center justify-center leading-none mt-[40px] lg:mt-[60px] w-[83.59vw] lg:w-[1152px]"
+        >
           <p className="font-montreal font-medium text-[4.10vw] lg:text-[36px] text-[#191A2A]">
             Tea Ceremony
           </p>
@@ -59,11 +89,24 @@ const EventOrder = () => {
           >
             Google Maps
           </a>
-          <hr className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
-        </div>
+          <motion.hr 
+           variants={fadeLeft}
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ duration: 2.5, ease: "easeOut" }}
+          className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
+        </motion.div>
 
         {/* Wedding Reception */}
-        <div className="flex flex-col items-center justify-center leading-none mt-[40px] lg:mt-[60px] w-[83.59vw] lg:w-[1152px]">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+          className="flex flex-col items-center justify-center leading-none mt-[40px] lg:mt-[60px] w-[83.59vw] lg:w-[1152px]"
+        >
           <p className="font-montreal font-medium text-[4.10vw] lg:text-[36px] text-[#191A2A]">
             Wedding Reception
           </p>
@@ -86,11 +129,23 @@ const EventOrder = () => {
           >
             Google Maps
           </a>
-          <hr className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
-        </div>
+          <motion.hr
+            variants={fadeRight}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 2.5, ease: "easeOut" }} className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
+        </motion.div>
 
         {/* After Party */}
-        <div className="flex flex-col items-center justify-center leading-none mt-[40px] lg:mt-[60px] w-[83.59vw] lg:w-[1152px]">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+          className="flex flex-col items-center justify-center leading-none mt-[40px] lg:mt-[60px] w-[83.59vw] lg:w-[1152px]"
+        >
           <p className="font-montreal font-medium text-[4.10vw] lg:text-[36px] text-[#191A2A]">
             After Party
           </p>
@@ -113,8 +168,13 @@ const EventOrder = () => {
           >
             Google Maps
           </a>
-          <hr className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
-        </div>
+          <motion.hr 
+           variants={fadeLeft}
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ duration: 2.5, ease: "easeOut" }}className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
+        </motion.div>
       </div>
     </section>
   );

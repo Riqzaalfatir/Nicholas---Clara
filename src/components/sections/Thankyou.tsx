@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { fadeUp, fadeIn} from "@/lib/animation";
 
 const Thankyou = () => {
   return (
@@ -8,27 +10,54 @@ const Thankyou = () => {
         <div className="relative flex flex-col items-center justify-center">
           {/* Foto */}
           <div className="absolute w-[61.54vw] h-[92.31vw] top-[12.82vw] lg:w-[371px] lg:h-[557px] lg:top-[70px] left-1/2 -translate-x-1/2 z-0">
+          <motion.div
+          variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut" }}>
             <img
               src="/images/thankyou/Aset-Thankyou.webp"
               alt="Nicholas & Clara"
               className="w-full h-full object-cover"
             />
+            </motion.div>
           </div>
-          <h1 className="font-montreal font-regular text-[16.41vw] lg:text-[102px] z-10 relative [mix-blend-mode:exclusion] text-[#F2F1E8]">
+          <motion.h1 
+          variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut" }}
+          className="font-montreal font-regular text-[16.41vw] lg:text-[102px] z-10 relative [mix-blend-mode:exclusion] text-[#F2F1E8]">
             Thank You
-          </h1>
-          <p className="font-helvetica font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] pt-[85.90vw] lg:pt-[505px] -ml-[1.28vw] lg:-ml-0 lg:tracking-wide">
+          </motion.h1>
+          <motion.p 
+           variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut" }}
+          className="font-helvetica font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] pt-[85.90vw] lg:pt-[505px] -ml-[1.28vw] lg:-ml-0 lg:tracking-wide">
             For being part of our journey. <br />
             We look forward to celebrating love, laughter, <br />
             and happily ever after with you!
-          </p>
+          </motion.p>
+
+          <motion.div
+           variants={fadeIn}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut" }}>
           <Image
-            src="/images/thankYou/Logo-Provite.webp"
+            src="/images/thankyou/Logo-Provite.webp"
             alt="Provite Logo"
             width={89}
             height={65}
             className="object-contain mt-[37.18vw] w-[22.82vw] h-[16.67vw] lg:mt-[36px] lg:w-[89px] lg:h-[89px]"
           />
+          </motion.div>
         </div>
       </div>
     </section>

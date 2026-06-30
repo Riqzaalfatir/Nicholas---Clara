@@ -1,4 +1,5 @@
-import React from "react";
+import useIsMobile from "@/hooks/useIsMobile";
+
 
 const Hero = ({ start }: { start: boolean }) => {
   return (

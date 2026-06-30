@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import WishesCard from "@/components/popup/WishesCard";
 import NotifModal from "@/components/popup/NotifModal";
+import { motion } from "framer-motion";
+import { fadeUp, fadeIn} from "@/lib/animation";
 
 type PesanItem = {
   id: number;
@@ -57,41 +59,77 @@ const Wishes = () => {
         id="wishes"
         className="bg-[#F2F1E8] w-full flex flex-col items-center px-[0.5vw] pt-[120px] pb-[120px] lg:pt-[236px] lg:pb-[35px] leading-none"
       >
-        <h2 className="font-montreal font-medium text-[6.15vw] lg:text-[64px] text-[#191A2A]">
+        <motion.h2
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+          className="font-montreal font-medium text-[6.15vw] lg:text-[64px] text-[#191A2A]"
+        >
           Share Your Wishes
-        </h2>
+        </motion.h2>
 
         <div className="w-full max-w-[72.82vw] lg:max-w-[583px] mx-auto mt-[50px] lg:mt-[65px]">
           <div className="flex flex-col gap-[20px]">
-            <input
-              type="text"
-              value={nama}
-              placeholder="Desy (Tester)"
-              onChange={(e) => setNama(e.target.value)}
-              className="w-full text-[#191A2A] font-montreal font-regular text-[3.08vw] lg:text-[18px] bg-transparent border border-[#191A2A]/40 px-[3.33vw] lg:px-[23px] h-[8.46vw] lg:h-[40px] rounded-full outline-none placeholder:text-[#191A2A]/50"
-            />
-
-            <textarea
-              value={pesan}
-              onChange={(e) => setPesan(e.target.value)}
-              className="w-full text-[#191A2A] font-montreal font-regular text-[3.08vw] lg:text-[18px] bg-transparent border border-[#191A2A]/40 px-[3.33vw] lg:px-[23px] py-[2.56vw] lg:py-[10px] h-[15.38vw] lg:h-[261px] rounded-xl outline-none placeholder:text-[#191A2A]/50 resize-none"
-            />
-
-            <button
-              onClick={handleSubmit}
-              className="group bg-[#B7B7B7] hover:bg-[#191A2A] active:scale-95 transition-all duration-200 w-full rounded-full h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[18px] font-montreal font-regular uppercase flex items-center justify-center gap-0.5 lg:gap-1 text-[#191A2A] hover:text-white tracking-widest"
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut" }}
             >
-              <Image
-                src="/images/wishes/Panah.svg"
-                alt="Kirim"
-                width={20}
-                height={20}
-                className="object-contain w-[18px] lg:w-[25px] group-hover:invert transition-all duration-200"
+              <input
+                type="text"
+                value={nama}
+                placeholder="Desy (Tester)"
+                onChange={(e) => setNama(e.target.value)}
+                className="w-full text-[#191A2A] font-montreal font-regular text-[3.08vw] lg:text-[18px] bg-transparent border border-[#191A2A]/40 px-[3.33vw] lg:px-[23px] h-[8.46vw] lg:h-[40px] rounded-full outline-none placeholder:text-[#191A2A]/50"
               />
-              Send
-            </button>
+            </motion.div>
 
-            <div
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut" }}
+            >
+              <textarea
+                value={pesan}
+                onChange={(e) => setPesan(e.target.value)}
+                className="w-full text-[#191A2A] font-montreal font-regular text-[3.08vw] lg:text-[18px] bg-transparent border border-[#191A2A]/40 px-[3.33vw] lg:px-[23px] py-[2.56vw] lg:py-[10px] h-[15.38vw] lg:h-[261px] rounded-xl outline-none placeholder:text-[#191A2A]/50 resize-none"
+              />
+            </motion.div>
+
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut" }}
+            >
+              <button
+                onClick={handleSubmit}
+                className="group bg-[#B7B7B7] hover:bg-[#191A2A] active:scale-95 transition-all duration-200 w-full rounded-full h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[18px] font-montreal font-regular uppercase flex items-center justify-center gap-0.5 lg:gap-1 text-[#191A2A] hover:text-white tracking-widest"
+              >
+                <Image
+                  src="/images/wishes/Panah.svg"
+                  alt="Kirim"
+                  width={20}
+                  height={20}
+                  className="object-contain w-[18px] lg:w-[25px] group-hover:invert transition-all duration-200"
+                />
+                Send
+              </button>
+            </motion.div>
+
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut" }}
               className={`w-full rounded-2xl h-[84.36vw] lg:h-[519px] overflow-y-auto scrollbar-hide ${
                 showAll ? "bg-transparent rounded-none" : "bg-[#B7B7B7]"
               }`}
@@ -123,52 +161,68 @@ const Wishes = () => {
               ) : (
                 <div className="w-full">
                   <div className="grid grid-cols-2 gap-[2.05vw] items-stretch">
-                    {pesanList.map((item) => (
-                      <div
-                        key={item.id}
-                        onClick={() => setSelectedMessage(item)}
-                        className="rounded-xl overflow-hidden border border-[#191A2A]/20 bg-[#E0DFDA] flex flex-col cursor-pointer active:scale-95 transition-transform duration-150"
-                      >
-                        <div className="p-[2.56vw] relative flex-1 flex flex-col justify-center">
-                          <p className="absolute top-[1.54vw] left-[2.05vw] text-[6.15vw] lg:text-[22px] font-montreal text-[#191A2A]/30">
-                            "
-                          </p>
+                    {pesanList.map((item, index) => (
+  <motion.div
+    key={item.id}
+    variants={fadeIn}
+    initial="hidden"
+    animate="show"
+    transition={{
+      duration: 1.5,
+      ease: "easeOut",
+      delay: index * 0.1,
+    }}
+    onClick={() => setSelectedMessage(item)}
+    className="rounded-xl overflow-hidden border border-[#191A2A]/20 bg-[#E0DFDA] flex flex-col cursor-pointer active:scale-95 transition-transform duration-150"
+  >
+    <div className="p-[2.56vw] relative flex-1 flex flex-col justify-center">
+      <p className="absolute top-[1.54vw] left-[2.05vw] text-[6.15vw] lg:text-[22px] font-montreal text-[#191A2A]/30">
+        "
+      </p>
 
-                          <p className="font-montreal font-regular text-[2.56vw] text-[#191A2A] lg:text-[18px] text-left mt-5 mb-2 line-clamp-4 leading-[3.85vw]">
-                            {item.pesan}
-                          </p>
-                        </div>
+      <p className="font-montreal font-regular text-[2.56vw] text-[#191A2A] lg:text-[18px] text-left mt-5 mb-2 line-clamp-4 leading-[3.85vw]">
+        {item.pesan}
+      </p>
+    </div>
 
-                        <div className="bg-[#191A2A] h-[7.69vw] flex items-center justify-center px-4">
-                          <p className="text-white text-center line-clamp-1 text-[2.56vw] lg:text-[18px] font-montreal">
-                            {item.nama}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
+    <div className="bg-[#191A2A] h-[7.69vw] flex items-center justify-center px-4">
+      <p className="text-white text-center line-clamp-1 text-[2.56vw] lg:text-[18px] font-montreal">
+        {item.nama}
+      </p>
+    </div>
+  </motion.div>
+))}
                   </div>
                 </div>
               )}
-            </div>
+            </motion.div>
 
             <WishesCard
               data={selectedMessage}
               onClose={() => setSelectedMessage(null)}
             />
 
-            <button
-              onClick={() => setShowAll(!showAll)}
-              className="group bg-[#B7B7B7] hover:bg-[#191A2A] active:scale-95 transition-all duration-200 w-full rounded-full h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[18px] font-montreal font-regular uppercase flex items-center justify-center gap-1.5 text-[#191A2A] hover:text-white tracking-widest"
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut" }}
             >
-              <Image
-                src="/images/wishes/Pesan.png"
-                alt="Pesan"
-                width={20}
-                height={20}
-                className="object-cover w-[20px] lg:w-[25px] group-hover:invert transition-all duration-200"
-              />
-              {showAll ? "BACK" : "VIEW ALL MESSAGES"}
-            </button>
+              <button
+                onClick={() => setShowAll(!showAll)}
+                className="group bg-[#B7B7B7] hover:bg-[#191A2A] active:scale-95 transition-all duration-200 w-full rounded-full h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[18px] font-montreal font-regular uppercase flex items-center justify-center gap-1.5 text-[#191A2A] hover:text-white tracking-widest"
+              >
+                <Image
+                  src="/images/wishes/Pesan.png"
+                  alt="Pesan"
+                  width={20}
+                  height={20}
+                  className="object-cover w-[20px] lg:w-[25px] group-hover:invert transition-all duration-200"
+                />
+                {showAll ? "BACK" : "VIEW ALL MESSAGES"}
+              </button>
+            </motion.div>
           </div>
         </div>
 
