@@ -29,6 +29,8 @@ const WeddingGift = () => {
   initial="hidden"
   whileInView="show"
   viewport={{ once: true, amount: 0 }}
+    transition={{ duration: 3, ease: "easeOut" }}
+
           className="absolute -bottom-[2.31vw] left-0 font-montreal font-regular text-[17.95vw] lg:text-[18vw] whitespace-nowrap text-[#F2F1E8] leading-none"
         >
           Wedding Gift
