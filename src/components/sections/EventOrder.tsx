@@ -44,7 +44,7 @@ const EventOrder = () => {
             href="https://maps.google.com/?q=Abipraya+Cahya+Kawaluya+Chapel+Kota+Baru+Parahyangan+Padalarang"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] underline underline-offset-[5px] mt-[5.64vw] lg:mt-[30px]"
+            className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] hover:text-black underline underline-offset-[5px] hover:underline-offset-[8px] active:scale-95 transition-all duration-300 mt-[5.64vw] lg:mt-[30px]"
           >
             Google Maps
           </a>
@@ -54,7 +54,7 @@ const EventOrder = () => {
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 2.5, ease: "easeOut" }}
-            className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[70px]"
+            className="w-full border-t-[1px] lg:border-t-[2.5px] border-[#191A2A] mt-[40px] lg:mt-[70px]"
           />
         </motion.div>
 
@@ -85,7 +85,7 @@ const EventOrder = () => {
             href="https://maps.google.com/?q=Mason+Pine+Hotel+Kota+Baru+Parahyangan+Padalarang+Bandung"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] underline underline-offset-[5px] mt-[5.64vw] lg:mt-[30px]"
+            className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] hover:text-black underline underline-offset-[5px] hover:underline-offset-[8px] active:scale-95 transition-all duration-300 mt-[5.64vw] lg:mt-[30px]"
           >
             Google Maps
           </a>
@@ -95,7 +95,7 @@ const EventOrder = () => {
                       whileInView="show"
                       viewport={{ once: true, amount: 0.3 }}
                       transition={{ duration: 2.5, ease: "easeOut" }}
-          className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
+          className="w-full border-t-[1px] lg:border-t-[2.5px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
         </motion.div>
 
         {/* Wedding Reception */}
@@ -125,7 +125,7 @@ const EventOrder = () => {
             href="https://maps.google.com/?q=Mason+Pine+Hotel+Kota+Baru+Parahyangan+Padalarang+Bandung"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] underline underline-offset-[5px] mt-[5.64vw] lg:mt-[30px]"
+            className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] hover:text-black underline underline-offset-[5px] hover:underline-offset-[8px] active:scale-95 transition-all duration-300 mt-[5.64vw] lg:mt-[30px]"
           >
             Google Maps
           </a>
@@ -134,7 +134,7 @@ const EventOrder = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 2.5, ease: "easeOut" }} className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
+            transition={{ duration: 2.5, ease: "easeOut" }} className="w-full border-t-[1px] lg:border-t-[2.5px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
         </motion.div>
 
         {/* After Party */}
@@ -164,7 +164,7 @@ const EventOrder = () => {
             href="https://maps.google.com/?q=Sona+Table+Hejo+Square+Kota+Baru+Parahyangan+Bandung"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] underline underline-offset-[5px] mt-[5.64vw] lg:mt-[30px]"
+            className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] hover:text-black underline underline-offset-[5px] hover:underline-offset-[8px] active:scale-95 transition-all duration-300 mt-[5.64vw] lg:mt-[30px]"
           >
             Google Maps
           </a>
@@ -173,7 +173,7 @@ const EventOrder = () => {
                       initial="hidden"
                       whileInView="show"
                       viewport={{ once: true, amount: 0.3 }}
-                      transition={{ duration: 2.5, ease: "easeOut" }}className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
+                      transition={{ duration: 2.5, ease: "easeOut" }}className="w-full border-t-[1px] lg:border-t-[2.5px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
         </motion.div>
       </div>
     </section>
@@ -211,12 +211,12 @@ export default EventOrder;
 
 //
 //             href="#"
-//             className="font-montreal font-medium text-[12px] lg:text-[18px] text-[#191A2A] underline underline-offset-[5px]  underline-offset-[5px]-offset-[5px] mt-[22px] lg:mt-[30px]"
+//             className="font-montreal font-medium text-[12px] lg:text-[18px] text-[#191A2A] hover:text-black underline underline-offset-[5px] hover:underline-offset-[8px] active:scale-95 transition-all duration-300  underline-offset-[5px]-offset-[5px] mt-[22px] lg:mt-[30px]"
 //           >
 //             Google Maps
 //           </a>
 
-//           <hr className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[70px]" />
+//           <hr className="w-full border-t-[1px] lg:border-t-[2.5px] border-[#191A2A] mt-[40px] lg:mt-[70px]" />
 //         </div>
 
 //         {/* Tea Ceremony */}
@@ -237,12 +237,12 @@ export default EventOrder;
 
 //
 //             href="#"
-//             className="font-montreal font-medium text-[12px] lg:text-[18px] text-[#191A2A] underline underline-offset-[5px] mt-[22px] lg:mt-[30px]"
+//             className="font-montreal font-medium text-[12px] lg:text-[18px] text-[#191A2A] hover:text-black underline underline-offset-[5px] hover:underline-offset-[8px] active:scale-95 transition-all duration-300 mt-[22px] lg:mt-[30px]"
 //           >
 //             Google Maps
 //           </a>
 
-//           <hr className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
+//           <hr className="w-full border-t-[1px] lg:border-t-[2.5px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
 //         </div>
 
 //         {/* Wedding Reception */}
@@ -263,12 +263,12 @@ export default EventOrder;
 
 //
 //             href="#"
-//             className="font-montreal font-medium text-[12px] lg:text-[18px] text-[#191A2A] underline underline-offset-[5px] mt-[22px] lg:mt-[30px]"
+//             className="font-montreal font-medium text-[12px] lg:text-[18px] text-[#191A2A] hover:text-black underline underline-offset-[5px] hover:underline-offset-[8px] active:scale-95 transition-all duration-300 mt-[22px] lg:mt-[30px]"
 //           >
 //             Google Maps
 //           </a>
 
-//           <hr className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
+//           <hr className="w-full border-t-[1px] lg:border-t-[2.5px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
 //         </div>
 
 //         {/* After Party */}
@@ -289,12 +289,12 @@ export default EventOrder;
 
 //
 //             href="#"
-//             className="font-montreal font-medium text-[12px] lg:text-[18px] text-[#191A2A] underline underline-offset-[5px] mt-[22px] lg:mt-[30px]"
+//             className="font-montreal font-medium text-[12px] lg:text-[18px] text-[#191A2A] hover:text-black underline underline-offset-[5px] hover:underline-offset-[8px] active:scale-95 transition-all duration-300 mt-[22px] lg:mt-[30px]"
 //           >
 //             Google Maps
 //           </a>
 
-//           <hr className="w-full border-t-[1px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
+//           <hr className="w-full border-t-[1px] lg:border-t-[2.5px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
 //         </div>
 //       </div>
 //     </section>

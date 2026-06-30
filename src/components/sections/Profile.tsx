@@ -14,7 +14,7 @@ const Profile = () => {
           <img
             src="/images/profile/Bg-Couple.webp"
             alt="Nicholas & Clara"
-            className="w-full h-full object-cover object-top block"
+            className="w-full h-full object-cover object-top block pointer-events-none"
           />
         </picture>
 
@@ -34,7 +34,7 @@ const Profile = () => {
             <img
               src="/images/profile/Logo-nc.webp"
               alt="NC Logo"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain pointer-events-none"
             />
           </motion.div>
         </div>

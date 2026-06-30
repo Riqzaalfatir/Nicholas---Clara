@@ -19,7 +19,7 @@ const Thankyou = () => {
             <img
               src="/images/thankyou/Aset-Thankyou.webp"
               alt="Nicholas & Clara"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover pointer-events-none"
             />
             </motion.div>
           </div>
@@ -55,7 +55,7 @@ const Thankyou = () => {
             alt="Provite Logo"
             width={89}
             height={65}
-            className="object-contain mt-[37.18vw] w-[22.82vw] h-[16.67vw] lg:mt-[36px] lg:w-[89px] lg:h-[89px]"
+            className="object-contain mt-[37.18vw] w-[22.82vw] h-[16.67vw] lg:mt-[36px] lg:w-[99px] lg:h-[89px]"
           />
           </motion.div>
         </div>

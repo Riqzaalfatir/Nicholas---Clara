@@ -7,18 +7,18 @@ const Gallery = () => {
         <img
           src="/images/gallery/Aset-Gallery.webp"
           alt="Nicholas & Clara"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover pointer-events-none"
         />
       </picture>
 
       <div
-        className="hidden lg:block w-1/2 h-full bg-cover bg-center"
+        className="hidden lg:block w-1/2 h-full bg-cover bg-center pointer-events-none"
         style={{ backgroundImage: "url('/images/gallery/Aset-GalleryD.webp')" }}
         role="img"
         aria-label="Nicholas & Clara"
       />
       <div
-        className="hidden lg:block w-1/2 h-full bg-cover bg-center -ml-px"
+        className="hidden lg:block w-1/2 h-full bg-cover bg-center -ml-px pointer-events-none"
         style={{ backgroundImage: "url('/images/gallery/Aset-GalleryD.webp')" }}
         role="img"
         aria-label="Nicholas & Clara"

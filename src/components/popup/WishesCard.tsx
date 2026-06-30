@@ -14,36 +14,67 @@ type WishesCardProps = {
 const WishesCard = ({ data, onClose }: WishesCardProps) => {
   if (!data) return null;
 
+  const initials = data.nama
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .toUpperCase()
+    .slice(0, 2);
+
   return (
     <div
       onClick={onClose}
-      className="fixed inset-0 flex flex-col items-center justify-center bg-black/50 backdrop-blur-sm z-50 px-6"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-[4px] px-6"
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="bg-[#F2F1E8] rounded-2xl p-8 w-full max-w-[330px] text-center shadow-xl border border-[#191A2A]/10"
+        className="relative overflow-hidden rounded-[24px] border border-[#191A2A]/15 bg-[#F2F1E8] shadow-lg w-full max-w-[360px]"
       >
-        <p className="font-montreal text-[40px] text-[#191A2A]/15 leading-none italic select-none -mb-2">
-          "
-        </p>
+        {/* Decorative top bar */}
+        <div className="h-1.5 bg-gradient-to-r from-[#191A2A] via-[#191A2A] to-[#191A2A]/80" />
 
-        <h3 className="text-[18px] text-[#191A2A] font-montreal font-bold tracking-wide">
-          {data.nama}
-        </h3>
+        {/* Content */}
+        <div className="px-8 py-10 flex flex-col items-center">
+          {/* Avatar */}
+          <div className="relative mb-7">
+            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#B7B7B7]/40 to-[#B7B7B7]/20 border border-[#191A2A]/10 flex items-center justify-center">
+              <span className="text-[24px] font-montreal font-bold text-[#191A2A]/70">
+                {initials}
+              </span>
+            </div>
+            <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-[#191A2A]/10 rounded-full" />
+          </div>
 
-        <div className="w-[40px] h-[1px] bg-[#191A2A]/30 mx-auto my-4" />
+          {/* Name */}
+          <h3 className="text-[20px] font-montreal font-bold text-[#191A2A] mb-1 tracking-tight">
+            {data.nama}
+          </h3>
 
-        <p className="text-[13px] font-montreal font-regular leading-relaxed text-[#191A2A]/85 line-clamp-6">
-          {data.pesan}
-        </p>
+          {/* Small accent line */}
+          <div className="w-12 h-0.5 bg-[#191A2A]/20 mb-5 rounded-full" />
+
+          {/* Quotation mark */}
+          <p className="font-montreal text-[32px] text-[#191A2A]/12 leading-none mb-3">
+            "
+          </p>
+
+          {/* Message */}
+          <p className="text-[13px] font-montreal font-regular leading-[1.8] text-[#191A2A]/80 line-clamp-6 text-center mb-7">
+            {data.pesan}
+          </p>
+
+          {/* Close button */}
+          <button
+            onClick={onClose}
+            className="w-full bg-[#191A2A] hover:bg-[#191A2A]/85 active:scale-95 transition-all duration-300 text-white px-6 py-3.5 rounded-full text-[12px] font-montreal font-bold tracking-[0.5px] uppercase shadow-sm hover:shadow-md"
+          >
+            ✓ Close
+          </button>
+        </div>
+
+        {/* Decorative bottom bar */}
+        <div className="h-1 bg-gradient-to-r from-[#191A2A]/80 via-[#191A2A] to-[#191A2A]" />
       </div>
-
-      <button
-        onClick={onClose}
-        className="mt-5 w-full max-w-[330px] bg-[#191A2A] hover:bg-[#191A2A]/80 active:scale-95 transition-all duration-200 text-white px-6 py-3 rounded-full text-[12px] font-montreal font-medium tracking-widest uppercase"
-      >
-        BACK
-      </button>
     </div>
   );
 };

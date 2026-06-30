@@ -22,7 +22,7 @@ const WeddingGift = () => {
           src="/images/weddinggift/Couple-Gift.svg"
           alt="Wedding Gift"
           fill
-          className="object-cover block lg:object-bottom"
+          className="object-cover block lg:object-bottom pointer-events-none"
         />
         <motion.h2
           variants={fadeUp}
@@ -96,7 +96,7 @@ const WeddingGift = () => {
           >
             <button
               onClick={handleCopy}
-              className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] underline underline-offset-[5px]"
+              className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] hover:text-black underline underline-offset-[5px] hover:underline-offset-[8px] active:scale-95 transition-all duration-300"
             >
               {copied ? "Copied!" : "Copy"}
             </button>

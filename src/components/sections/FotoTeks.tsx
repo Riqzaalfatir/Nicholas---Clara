@@ -29,7 +29,7 @@ const FotoTeks = () => {
             <img
               src="/images/fototeks/Couple1.webp"
               alt="Couple1"
-              className="w-full h-full object-cover block"
+              className="w-full h-full object-cover block pointer-events-none"
             />
           </motion.div>
           <motion.p
@@ -67,7 +67,7 @@ const FotoTeks = () => {
             <img
               src="/images/fototeks/Couple2.webp"
               alt="Couple2"
-              className="w-full h-full object-cover block"
+              className="w-full h-full object-cover block pointer-events-none"
             />
           </motion.div>
           <motion.p

@@ -13,7 +13,7 @@ const BrideGroom = () => {
         <img
           src="/images/brideroom/Bg-Brideroom.svg"
           alt="Nicholas & Clara"
-          className="absolute inset-0 w-full h-full object-cover object-top"
+          className="absolute inset-0 w-full h-full object-cover object-top pointer-events-none"
         />
       </picture>
 

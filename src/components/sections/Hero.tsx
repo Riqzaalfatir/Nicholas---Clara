@@ -13,7 +13,7 @@ const Hero = ({ start }: { start: boolean }) => {
           <img
             src="/images/hero/Aset-Heroo.webp"
             alt="Nicholas & Clara"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover pointer-events-none"
           />
         </div>
 
