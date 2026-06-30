@@ -13,7 +13,7 @@ const WeddingGift = () => {
   };
 
   return (
-    <section className="bg-[#F2F1E8]">
+    <section id="gift" className="bg-[#F2F1E8]">
 
       {/* Gambar dan judul */}
       <div className="relative w-full aspect-[390/255] lg:aspect-[1514/759] overflow-hidden">

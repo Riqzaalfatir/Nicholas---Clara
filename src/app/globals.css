@@ -7,4 +7,20 @@
   body {
     overflow-x: hidden;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Sembunyikan scrollbar tapi tetap bisa scroll */
+  html,
+  body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE & Edge lama */
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
 }

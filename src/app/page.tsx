@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { usePreloader } from "@/hooks/UsePreloader";
+import LoadingScreen from "@/components/ui/LoadingScreen";
 import Opening from "@/components/popup/Opening";
 
 import Hero from "@/components/sections/Hero";
@@ -19,6 +20,7 @@ import Header from "@/components/layout/Header";
 
 export default function Home() {
   const [start, setStart] = useState<boolean>(false);
+  const [showLoading, setShowLoading] = useState<boolean>(true);
   const { progress } = usePreloader();
 
   useEffect(() => {
@@ -32,23 +34,30 @@ export default function Home() {
   }, [start]);
 
   return (
-    <>
-      <main className="block">
-        <Header />
-        <Hero start={start} />
-        <Profile />
-        <BrideGroom />
-        <FotoTeks />
-        <Gallery />
-        <EventOrder />
-        <Rsvp />
-        <WeddingGift />
-        <Wishes />
-        <Thankyou />
-      </main>
-      {progress === 100 && !start && (
-        <Opening setStart={setStart} namaTamu="Sela" />
-      )}
-    </>
-  );
+  <>
+    <main className="block">
+      <Header />
+      <Hero start={start} />
+      <Profile />
+      <BrideGroom />
+      <FotoTeks />
+      <Gallery />
+      <EventOrder />
+      <Rsvp />
+      <WeddingGift />
+      <Wishes />
+      <Thankyou />
+    </main>
+
+    {/* Opening mounted dari awal, standby di belakang LoadingScreen */}
+    {!start && <Opening setStart={setStart} namaTamu="Sela" />}
+
+    {showLoading && (
+      <LoadingScreen
+        progress={progress}
+        onDone={() => setShowLoading(false)}
+      />
+    )}
+  </>
+);
 }

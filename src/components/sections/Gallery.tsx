@@ -2,7 +2,7 @@ import React from "react";
 
 const Gallery = () => {
   return (
-    <section className="relative w-full h-[390px] lg:h-[759px] flex">
+    <section id="gallery" className="relative w-full h-[390px] lg:h-[759px] flex">
       {/* Mobile - 1 gambar */}
       <img
         src="/images/gallery/Aset-Gallery.webp"

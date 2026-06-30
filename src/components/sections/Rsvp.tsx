@@ -30,7 +30,7 @@ const Rsvp = () => {
 
   return (
     <>
-      <section className="bg-[#F2F1E8]">
+      <section id="rsvp" className="bg-[#F2F1E8]">
         <div className="pt-[120px] pb-[120px] lg:pt-[236px] lg:pb-[247px] px-[0.5vw]">
           <div className="flex flex-col items-center justify-center leading-none">
             <h2 className="font-montreal font-medium text-[6.15vw] lg:text-[64px] text-[#191A2A]">

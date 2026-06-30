@@ -2,7 +2,7 @@ import React from "react";
 
 const EventOrder = () => {
   return (
-    <section className="bg-[#F2F1E8]">
+    <section id="eventorder" className="bg-[#F2F1E8]">
       <div className="pt-[110px] lg:pt-[232px] flex flex-col items-center justify-center leading-none">
         <h2 className="text-[6.15vw] lg:text-[64px] font-montreal font-medium text-[#191A2A]">
           Saturday, 29 August 2026
