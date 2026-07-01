@@ -6,10 +6,10 @@ import { fadeUp, fadeIn} from "@/lib/animation";
 const Thankyou = () => {
   return (
     <section className="bg-[#F2F1E8]">
-      <div className="pt-[36.41vw] pb-[4.62vw] lg:pt-[300px] lg:pb-[5px]">
+      <div className="pt-[36.41vw] pb-[4.62vw] lg:pt-[250px] lg:pb-[5px]">
         <div className="relative flex flex-col items-center justify-center">
           {/* Foto */}
-          <div className="absolute w-[61.54vw] h-[92.31vw] top-[12.82vw] lg:w-[371px] lg:h-[557px] lg:top-[70px] left-1/2 -translate-x-1/2 z-0">
+          <div className="absolute w-[61.54vw] h-[92.31vw] top-[12.82vw] lg:w-[371px] lg:h-[557px] lg:top-[77px] left-1/2 -translate-x-1/2 z-0">
           <motion.div
           variants={fadeUp}
               initial="hidden"
