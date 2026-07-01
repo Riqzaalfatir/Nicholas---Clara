@@ -48,12 +48,7 @@ const EventOrder = () => {
           >
             Google Maps
           </a>
-          <motion.hr
-            variants={fadeRight}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 2.5, ease: "easeOut" }}
+          <hr
             className="w-full border-t-[1px] lg:border-t-[2.5px] border-[#191A2A] mt-[40px] lg:mt-[70px]"
           />
         </motion.div>
@@ -89,12 +84,7 @@ const EventOrder = () => {
           >
             Google Maps
           </a>
-          <motion.hr 
-           variants={fadeLeft}
-                      initial="hidden"
-                      whileInView="show"
-                      viewport={{ once: true, amount: 0.3 }}
-                      transition={{ duration: 2.5, ease: "easeOut" }}
+          <hr 
           className="w-full border-t-[1px] lg:border-t-[2.5px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
         </motion.div>
 
@@ -129,12 +119,8 @@ const EventOrder = () => {
           >
             Google Maps
           </a>
-          <motion.hr
-            variants={fadeRight}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 2.5, ease: "easeOut" }} className="w-full border-t-[1px] lg:border-t-[2.5px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
+          <hr
+          className="w-full border-t-[1px] lg:border-t-[2.5px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
         </motion.div>
 
         {/* After Party */}
@@ -168,12 +154,8 @@ const EventOrder = () => {
           >
             Google Maps
           </a>
-          <motion.hr 
-           variants={fadeLeft}
-                      initial="hidden"
-                      whileInView="show"
-                      viewport={{ once: true, amount: 0.3 }}
-                      transition={{ duration: 2.5, ease: "easeOut" }}className="w-full border-t-[1px] lg:border-t-[2.5px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
+          <hr 
+           className="w-full border-t-[1px] lg:border-t-[2.5px] border-[#191A2A] mt-[40px] lg:mt-[60px]" />
         </motion.div>
       </div>
     </section>

@@ -39,11 +39,11 @@ const WeddingGift = () => {
       {/* Konten */}
       <div className="w-[83.59vw] lg:w-[564px] mx-auto">
         <motion.hr
-          variants={fadeRight}
+          variants={fadeUp}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 2.5, ease: "easeOut" }}
+          transition={{ duration: 3, ease: "easeOut" }}
           className="border-t-[1.5px] lg:border-t-[2px] border-[#191A2A] mt-[40px] lg:mt-[90px]"
         />
 
@@ -70,13 +70,14 @@ const WeddingGift = () => {
           please find the details below for your convenience.
         </motion.p>
 
-        <div className="flex items-end justify-between mt-[28px] lg:mt-[52px]">
-          <motion.div
-            variants={fadeRight}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 2.5, ease: "easeOut" }}
+        <motion.div 
+        variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+        className="flex items-end justify-between mt-[28px] lg:mt-[52px]">
+          <div
             className="leading-none"
           >
             <p className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A]">
@@ -85,14 +86,9 @@ const WeddingGift = () => {
             <p className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] mt-[3px] lg:mt-[10px]">
               123 555 2025 a/n Provite
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={fadeLeft}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 2.5, ease: "easeOut" }}
+          <div
           >
             <button
               onClick={handleCopy}
@@ -100,15 +96,15 @@ const WeddingGift = () => {
             >
               {copied ? "Copied!" : "Copy"}
             </button>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
 
         <motion.hr
-          variants={fadeLeft}
+          variants={fadeUp}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 2.5, ease: "easeOut" }}
+          transition={{ duration: 3.5, ease: "easeOut" }}
           className="border-t-[1.5px] lg:border-t-[2px] border-[#191A2A] mt-[22px] lg:mt-[35px]"
         />
       </div>

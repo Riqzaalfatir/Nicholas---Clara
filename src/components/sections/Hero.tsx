@@ -5,11 +5,11 @@ const Hero = ({ start }: { start: boolean }) => {
   return (
     <section
       id="hero"
-      className="bg-[#F2F1E8] flex items-center justify-center leading-none"
+      className="bg-[#F2F1E8] flex items-center justify-center leading-none min-h-screen"
     >
-      <div className="relative pt-[46.41vw] pb-[46.92vw] lg:pt-[113px] lg:pb-[83px] flex flex-col w-[85.38vw] lg:w-[526px]">
+      <div className="relative lg:pt-[113px] lg:pb-[83px] flex flex-col w-[85.38vw] lg:w-[526px]">
         {/* Foto */}
-        <div className="absolute w-[61.54vw] h-[92.31vw] top-[50.7vw] lg:w-[370px] lg:h-[556px] lg:top-[141px] left-1/2 -translate-x-1/2 -ml-[0.72vw] lg:-ml-[0.2vw] z-0">
+        <div className="absolute w-[61.54vw] h-[92.31vw] top-[4.5vw] lg:w-[370px] lg:h-[556px] lg:top-[141px] left-1/2 -translate-x-1/2 -ml-[0.72vw] lg:-ml-[0.2vw] z-0">
           <img
             src="/images/hero/Aset-Heroo.webp"
             alt="Nicholas & Clara"
