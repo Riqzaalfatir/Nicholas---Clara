@@ -49,7 +49,7 @@ export default function Home() {
       <Thankyou />
     </main>
 
-    {/* Opening mounted dari awal, standby di belakang LoadingScreen */}
+    {/* Opening Standby di belakang LoadingScreen */}
     {!start && <Opening setStart={setStart} namaTamu="Sela" />}
 
     {showLoading && (

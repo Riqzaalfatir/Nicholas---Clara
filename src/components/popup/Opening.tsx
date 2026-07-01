@@ -49,8 +49,14 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
         <div className="fixed inset-0 z-[100] flex justify-center items-center px-4">
           <motion.div
             variants={blurVariants}
-            initial={{ backdropFilter: "blur(6px)", backgroundColor: "rgba(0,0,0,0.5)" }}
-            animate={{ backdropFilter: "blur(6px)", backgroundColor: "rgba(0,0,0,0.5)" }}
+            initial={{
+              backdropFilter: "blur(6px)",
+              backgroundColor: "rgba(0,0,0,0.5)",
+            }}
+            animate={{
+              backdropFilter: "blur(6px)",
+              backgroundColor: "rgba(0,0,0,0.5)",
+            }}
             exit="exit"
             className="absolute inset-0 z-[10]"
             style={{ transform: "translateZ(0)" }}

@@ -40,7 +40,7 @@ const WishesCard = ({ data, onClose }: WishesCardProps) => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.4 }}
       >
-        {/* Decorative top bar */}
+        {/* Decorasi bar atas */}
         <div className="h-1.5 bg-gradient-to-r from-[#191A2A] via-[#191A2A] to-[#191A2A]/80" />
 
         {/* Content */}
@@ -55,25 +55,21 @@ const WishesCard = ({ data, onClose }: WishesCardProps) => {
             <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-[#191A2A]/10 rounded-full" />
           </div>
 
-          {/* Name */}
           <h3 className="text-[20px] font-montreal font-bold text-[#191A2A] mb-1 tracking-tight">
             {data.nama}
           </h3>
 
-          {/* Small accent line */}
           <div className="w-12 h-0.5 bg-[#191A2A]/20 mb-5 rounded-full" />
 
-          {/* Quotation mark */}
           <p className="font-montreal text-[32px] text-[#191A2A]/12 leading-none mb-3">
             "
           </p>
 
-          {/* Message */}
+          {/* Pesan */}
           <p className="text-[13px] font-montreal font-regular leading-[1.8] text-[#191A2A]/80 line-clamp-6 text-center mb-7">
             {data.pesan}
           </p>
 
-          {/* Close button */}
           <button
             onClick={onClose}
             className="w-full bg-[#191A2A] hover:bg-[#191A2A]/85 active:scale-95 transition-all duration-300 text-white px-6 py-3.5 rounded-full text-[12px] font-montreal font-bold tracking-[0.5px] uppercase shadow-sm hover:shadow-md"
@@ -82,7 +78,7 @@ const WishesCard = ({ data, onClose }: WishesCardProps) => {
           </button>
         </div>
 
-        {/* Decorative bottom bar */}
+        {/* Decorasi bar bawah */}
         <div className="h-1 bg-gradient-to-r from-[#191A2A]/80 via-[#191A2A] to-[#191A2A]" />
       </motion.div>
     </motion.div>

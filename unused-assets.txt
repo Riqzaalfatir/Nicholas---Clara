@@ -1,0 +1,10 @@
+public\images\brideroom\Bg-Brideroom.svg
+public\images\brideroom\Bg-Brideroom.webp
+public\images\hero\Aset-Hero.webp
+public\images\profile\BgCouple.webp
+public\images\profile\Logo-nc.svg
+public\images\rsvp\Logo-Wa.svg
+public\images\thankyou\Logo-Provite.svg
+public\images\weddinggift\Couple-Gift.webp
+public\images\weddinggift\CoupleGift.webp
+public\images\wishes\Panah.png
