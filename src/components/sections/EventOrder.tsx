@@ -41,7 +41,7 @@ const EventOrder = () => {
           </p>
 
           <a
-            href="https://maps.google.com/?q=Abipraya+Cahya+Kawaluya+Chapel+Kota+Baru+Parahyangan+Padalarang"
+            href="https://maps.app.goo.gl/rnQhNTaGfi9g2SHs9"
             target="_blank"
             rel="noopener noreferrer"
             className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] hover:text-black underline underline-offset-[5px] hover:underline-offset-[8px] active:scale-95 transition-all duration-300 mt-[5.64vw] lg:mt-[30px]"
@@ -77,7 +77,7 @@ const EventOrder = () => {
           </p>
 
           <a
-            href="https://maps.google.com/?q=Mason+Pine+Hotel+Kota+Baru+Parahyangan+Padalarang+Bandung"
+            href="https://maps.app.goo.gl/xHB2rdCVLppyXo687"
             target="_blank"
             rel="noopener noreferrer"
             className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] hover:text-black underline underline-offset-[5px] hover:underline-offset-[8px] active:scale-95 transition-all duration-300 mt-[5.64vw] lg:mt-[30px]"
@@ -112,7 +112,7 @@ const EventOrder = () => {
           </p>
 
           <a
-            href="https://maps.google.com/?q=Mason+Pine+Hotel+Kota+Baru+Parahyangan+Padalarang+Bandung"
+            href="https://maps.app.goo.gl/xHB2rdCVLppyXo687"
             target="_blank"
             rel="noopener noreferrer"
             className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] hover:text-black underline underline-offset-[5px] hover:underline-offset-[8px] active:scale-95 transition-all duration-300 mt-[5.64vw] lg:mt-[30px]"
@@ -147,7 +147,7 @@ const EventOrder = () => {
           </p>
 
           <a
-            href="https://maps.google.com/?q=Sona+Table+Hejo+Square+Kota+Baru+Parahyangan+Bandung"
+            href="https://maps.app.goo.gl/3fecdnr3YvGNqwey8"
             target="_blank"
             rel="noopener noreferrer"
             className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] hover:text-black underline underline-offset-[5px] hover:underline-offset-[8px] active:scale-95 transition-all duration-300 mt-[5.64vw] lg:mt-[30px]"

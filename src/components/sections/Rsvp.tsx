@@ -53,7 +53,7 @@ const Rsvp = () => {
               transition={{ duration: 3, ease: "easeOut" }}
               className="font-montreal font-regular text-[3.08vw] lg:text-[18px] text-[#191A2A] mt-[60px] lg:mt-[65px]"
             >
-              Dear Mr. /Mrs. / Ms.
+              Dear
             </motion.p>
             <motion.p
               variants={fadeUp}
@@ -111,14 +111,14 @@ const Rsvp = () => {
                   onClick={() =>
                     setPilihan(pilihan === "tidak_hadir" ? null : "tidak_hadir")
                   }
-                  className={`w-[41.28vw] h-[8.46vw] lg:w-[171px] lg:h-[40px] rounded-[71px] lg:rounded-[38px] font-montreal font-regular text-[3.08vw] lg:text-[18px] transition-all duration-200
+                  className={`h-[8.46vw] px-[20px] lg:h-[40px] rounded-[71px] lg:rounded-[38px] font-montreal font-regular text-[3.08vw] lg:text-[18px] transition-all duration-200
                 ${
                   pilihan === "tidak_hadir"
                     ? "bg-[#191A2A] text-white border-transparent"
                     : "bg-transparent border border-[#B7B7B7] text-[#191A2A] hover:border-[#191A2A]"
                 }`}
                 >
-                  NOT ATTEND
+                  UNABLE TO ATTEND
                 </button>
               </motion.div>
             </div>

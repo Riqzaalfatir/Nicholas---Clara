@@ -92,7 +92,7 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
                 Nicholas & Clara
               </h1>
               <p className="text-[10px] lg:text-[14px] text-[#191A2A] font-helvetica font-regular pt-[16px] md:pt-[30px]">
-                Dear Mr. /Mrs. / Ms.
+                Dear
               </p>
               <p className="text-[14px] lg:text-[18px] text-[#191A2A] font-helvetica font-regular pt-[14px] md:pt-[17px] break-words max-w-full">
                 {namaTamu}

@@ -11,7 +11,7 @@ const BrideGroom = () => {
           srcSet="/images/brideroom/BrideroomD.webp"
         />
         <img
-          src="/images/brideroom/Bg-Brideroom.svg"
+          src="/images/brideroom/Bg-Brideroomm.webp"
           alt="Nicholas & Clara"
           className="absolute inset-0 w-full h-full object-cover object-top pointer-events-none"
         />

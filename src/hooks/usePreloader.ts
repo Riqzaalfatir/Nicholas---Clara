@@ -12,7 +12,7 @@ const IMAGES_TO_PRELOAD = [
   "/images/profile/Bg-CoupleD.webp",
   "/images/profile/Logo-nc.webp",
 
-  "/images/brideroom/Bg-Brideroom.svg",
+  "/images/brideroom/Bg-Brideroomm.webp",
   "/images/brideroom/BrideroomD.webp",
 
 
