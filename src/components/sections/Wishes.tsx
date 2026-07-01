@@ -139,18 +139,18 @@ const Wishes = () => {
                   <div className="sticky top-0 w-full h-[12px] lg:h-[15px] bg-[#B7B7B7] z-10" />
 
                   <div className="px-[3.33vw] py-[0.51vw] lg:px-[23px] lg:py-[5px]">
-                    {pesanList.slice(0, 8).map((item, index, array) => (
+                    {pesanList.map((item, index, array) => (
                       <div key={item.id}>
-                        <p className="text-[#191A2A] font-montreal text-[3.08vw] mb-[10px] lg:text-[18px] lg:mb-[17px]">
+                        <p className="text-[#191A2A] font-montreal text-[3.08vw] mb-[10px] lg:text-[18px] lg:mb-[16px]">
                           {item.nama}
                         </p>
 
-                        <p className="text-[#191A2A] font-montreal font-regular text-[2.56vw] lg:text-[18px] tracking-wide mb-[13px] lg:mb-[17px] break-words">
+                        <p className="text-[#191A2A] font-montreal font-regular text-[2.56vw] lg:text-[18px] tracking-wide mb-[13px] lg:mb-[17px] break-words leading-[13px] lg:leading-[22px]">
                           {item.pesan}
                         </p>
 
                         {index !== array.length - 1 && (
-                          <div className="border-t border-[#191A2A] mt-[2.05vw] mb-[3.85vw] lg:mt-[0px] lg:mb-[20px]" />
+                          <div className="border-t border-[#191A2A] mt-[2.05vw] mb-[3.85vw] lg:mt-[0px] lg:mb-[19px]" />
                         )}
                       </div>
                     ))}
@@ -253,15 +253,15 @@ const Wishes = () => {
             </motion.div>
           </div>
         </div>
- {showPopup && (
-          <motion.div 
+        {showPopup && (
+          <motion.div
             className="fixed inset-0 z-[999] flex items-center justify-center bg-black/40 backdrop-blur-[4px] px-[6.15vw]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <motion.div 
+            <motion.div
               className="relative overflow-hidden rounded-[28px] border border-[#191A2A]/20 bg-[#F2F1E8] shadow-lg w-full max-w-[84.62vw]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
