@@ -9,7 +9,7 @@ const WeddingGift = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("123 555 2025");
+    navigator.clipboard.writeText("7752700128");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -84,7 +84,7 @@ const WeddingGift = () => {
               BCA
             </p>
             <p className="font-montreal font-medium text-[3.08vw] lg:text-[18px] text-[#191A2A] mt-[3px] lg:mt-[10px]">
-              123 555 2025 a/n Provite
+              7752700128 a/n Nicholas Glenn
             </p>
           </div>
 
