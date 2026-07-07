@@ -42,7 +42,7 @@ const AutoSlideImage = ({
     const autoplay = emblaApi.plugins()?.autoplay;
     if (!autoplay) return;
 
-    // stop dulu pas mount, baru jalan lagi setelah startDelay
+    // stop delay
     autoplay.stop();
     const timer = setTimeout(() => {
       autoplay.play();
