@@ -22,6 +22,9 @@ const IMAGES_TO_PRELOAD = [
 
   "/images/fototeks/Couple1.webp",
   "/images/fototeks/Couple2.webp",
+  "/images/fototeks/Couple3.webp",
+  "/images/fototeks/Couple4.webp",
+
 
   "/images/thankyou/Aset-Thankyou.webp"
 ];

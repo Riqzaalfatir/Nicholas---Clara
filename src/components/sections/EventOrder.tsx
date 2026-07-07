@@ -30,7 +30,7 @@ const EventOrder = () => {
             Holy Matrimony
           </p>
           <p className="font-montreal font-medium text-[3.08vw] lg:text-[20px] text-[#191A2A] mt-[20px] lg:mt-[49px]">
-            11:00 AM
+            10:00 AM
           </p>
           <p className="font-montreal font-medium text-[4.10vw] lg:text-[36px] text-[#191A2A] mt-[25px] lg:mt-[45px]">
             Abipraya Cahya Kawaluya Chapel
@@ -101,7 +101,7 @@ const EventOrder = () => {
             Wedding Reception
           </p>
           <p className="font-montreal font-medium text-[3.08vw] lg:text-[20px] text-[#191A2A] mt-[20px] lg:mt-[39px]">
-            04:00 PM
+            06:00 PM
           </p>
           <p className="font-montreal font-medium text-[4.10vw] lg:text-[36px] text-[#191A2A] mt-[25px] lg:mt-[35px]">
             Mason Pine Grand Ballroom

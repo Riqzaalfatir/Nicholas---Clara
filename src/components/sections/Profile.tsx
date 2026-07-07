@@ -49,7 +49,7 @@ const Profile = () => {
           transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
           className="text-[4.10vw] lg:text-[28px] font-helvetica font-medium leading-[22px] lg:tracking-[0px] lg:leading-[30px] text-[#191A2A] text-justify w-[50.51vw] lg:w-[368px]"
         >
-          Together With Our Families, We You Invite To Celebrate Our Marriage
+          Together With Our Families, We Invite You To Celebrate Our Marriage
         </motion.p>
       </div>
     </section>
